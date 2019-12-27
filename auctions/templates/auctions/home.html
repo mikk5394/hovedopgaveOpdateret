@@ -2,7 +2,6 @@
 {% block content  %}
     <button class="nav-item nav-link">Get current auctions</button>
     {% for auction in auctions %}
-        <h1>{{ auction.auc_id }}</h1>
         <h1>{{ auction.item_id }}</h1>
         <h1>{{ auction.realm }}</h1>
         <h1>{{ auction.bid }}</h1>
