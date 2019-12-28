@@ -1,23 +1,74 @@
 body {
-  background: #fafafa;
-  color: #333333;
+    background-image: url("/static/auctions/Images/Website_Background.jpg") !important;
+    background-repeat:no-repeat;
+    background-size:100%;
   margin-top: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+  color: white;
+
+}
+
+.img-circular{
+ width: 200px;
+ height: 200px;
+ background-size: cover;
+ display: block;
+ border-radius: 100px;
+
+
+ vertical-align:middle;
+ text-align:center;
+}
+
+.div-wrapper img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.div-wrapper {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.allignment {
+    text-align: center;
+}
+
+.littleSpace {
+    margin-top: 2%;
+
 }
 
 ul {
   margin: 0;
 }
 
+.littleBox {
+  background:rgba(255,255,255,0.7);
+  filter: brightness(100%);
+  border-radius: 6%;
+  margin-top: 15%;
+}
+
+.myText {
+  font:rgba(255, 255, 255, 1);
+  filter: brightness(100%);
+
+}
+
 .bg-steel {
-  background-color: #5f788a;
+  background-color: 	#800000;
+  filter: brightness(70%);
+
 }
 
 .site-header .navbar-nav .nav-link {
   color: #cbd5db;
+  filter: brightness(130%);
 }
 
 .site-header .navbar-nav .nav-link:hover {
@@ -28,13 +79,28 @@ ul {
   font-weight: 500;
 }
 
+/*
 .content-section {
-  background: #ffffff;
+background: #800000;
+filter: brightness(70%);
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
+  opacity: 90%;
 }
+*/
+
+.content-section {
+background:rgba(128, 0, 0, 0.85);
+filter: brightness(70%);
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+}
+
 
 .article-title {
   color: #444444;
@@ -43,33 +109,62 @@ ul {
 a.article-title:hover {
   color: #428bca;
   text-decoration: none;
+
 }
 
 .article-content {
   white-space: pre-line;
+
 }
 
 .article-img {
   height: 65px;
   width: 65px;
   margin-right: 16px;
+
 }
 
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
   border-bottom: 1px solid #e3e3e3
+
 }
 
 .article-metadata a:hover {
   color: #333;
   text-decoration: none;
+
 }
 
 .article-svg {
   width: 25px;
   height: 25px;
   vertical-align: middle;
+
+}
+
+.download2 {
+
+
+  margin-right: 10px;
+  background: #339DFF;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 33px;
+  border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 120px;
+  text-align: center;
+}
+
+.download2:hover {
+  background: #fff;
+  color: #339DFF;
+  box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
 }
 
 .account-img {
@@ -77,8 +172,36 @@ a.article-title:hover {
   width: 125px;
   margin-right: 20px;
   margin-bottom: 16px;
+
+}
+
+.field-required {
+    font-weight: bold;a
+    color: white;
+}
+.field-required:after {
+    content: " *";
+    color: white;
 }
 
 .account-heading {
   font-size: 2.5rem;
+
+}
+
+.centering {
+	width: 45%;
+	height: 45%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.tdStyle{
+    background-image: url("/static/auctions/Images/Website_Background.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;
 }

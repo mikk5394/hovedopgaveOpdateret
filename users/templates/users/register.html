@@ -1,15 +1,20 @@
 {% extends "auctions/base.html" %}
 {% load crispy_forms_tags %}
 {% block content  %}
-    <div class="content-section">
+    <style>
+    .centering {
+	position: relative !important;
+	}
+    </style>
+    <div class="content-section centering" style="margin-top: 8% !important;">
         <form method="POST">
             {% csrf_token %}
-            <fieldset class="form-group">
+            <fieldset class="form-group myText" style="color: white;">
                 <legend class="border-bottom mb-4">Join</legend>
                 {{ form|crispy }}
             </fieldset>
-            <div class="from-group">
-                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+            <div class="from-group" style="margin-bottom: 5px;">
+                <button class="download2" type="submit">Sign Up</button>
             </div>
         </form>
             <div class="border-top pt-3">

@@ -1,9 +1,4 @@
 from django.shortcuts import render
-from .models import Auction
-import requests
-from requests.auth import HTTPBasicAuth
-import re
-from itertools import islice
 from django.contrib.auth.decorators import login_required
 from .forms import GetAuctions
 from .api_call import get_auctions
