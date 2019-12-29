@@ -1,15 +1,16 @@
 {% extends "auctions/base.html" %}
 {% block content  %}
-    <form method="POST">
+    <form style="color: white; margin-bottom: 20%;" class="centering2 allignment" method="POST">
         {% csrf_token %}
         {{ form }}
         <button type="submit">Search</button>
             {% if form.is_valid %}
-                <h2>Total auctions: {{total_auctions}}</h2>
+                <h2 style="color: white;">Total auctions: {{total_auctions}}</h2>
                 {% for auction in auctions %}
+                    <div class="content-section2">
                     <h4><a href="https://www.wowhead.com/item={{ auction.item }}">item</a></h4>
-                    <h4>Current bid: {% widthratio auction.bid 10000 1 %}G</h4>
-                    <h4>Buyout: {% widthratio auction.buyout 10000 1 %}G</h4>
+                    <h4>Current bid: {% widthratio auction.bid 10000 1 %}<font color="yellow">G</font></h4>
+                    <h4>Buyout: {% widthratio auction.buyout 10000 1 %}<font color="yellow">G</font></h4>
                     <h4>Quantity: {{ auction.quantity }}</h4>
                     <h4>Time left: {{ auction.timeLeft }}</h4>
                     </div>

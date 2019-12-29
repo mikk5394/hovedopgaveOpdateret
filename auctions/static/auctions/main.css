@@ -3,6 +3,8 @@ body {
     background-repeat:no-repeat;
     background-size:100%;
   margin-top: 5rem;
+
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,6 +54,7 @@ ul {
   filter: brightness(100%);
   border-radius: 6%;
   margin-top: 15%;
+  display: inline-block;
 }
 
 .myText {
@@ -101,6 +104,23 @@ filter: brightness(70%);
 
 }
 
+.content-section2 {
+background:rgba(128, 0, 0, 0.85);
+filter: brightness(70%);
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 30%;
+  margin-left: 30%;
+
+}
+
+.littlePicturePls{
+   margin-right: 5%;
+  margin-left: 5%;
+}
+
 
 .article-title {
   color: #444444;
@@ -145,8 +165,6 @@ a.article-title:hover {
 }
 
 .download2 {
-
-
   margin-right: 10px;
   background: #339DFF;
   color: #fff;
@@ -199,6 +217,16 @@ a.article-title:hover {
 	right: 0;
 	margin: auto;
 }
+
+.centering2 {
+	width: 45%;
+	height: 45%;
+	position: relative;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 
 .tdStyle{
     background-image: url("/static/auctions/Images/Website_Background.jpg");

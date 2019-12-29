@@ -3,14 +3,6 @@ from django.contrib.auth.decorators import login_required
 from .forms import GetAuctions
 from .api_call import get_auctions
 
-'''
-@login_required
-def home(request):
-    context = {
-        'auctions': Auction.objects.all()
-    }
-    return render(request, 'auctions/home.html', context)
-'''
 
 @login_required
 def about(request):
@@ -29,7 +21,7 @@ def home(request):
             amount = form.cleaned_data['amount']
 
             auctions = get_auctions(region, server, amount)
-            print(auctions)
+
             context = {
                 'form': form,
                 'auctions': auctions,
