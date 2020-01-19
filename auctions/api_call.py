@@ -4,7 +4,7 @@ import re
 from itertools import islice
 
 
-def get_auctions(region, server, amount):
+def get_auctions(region, server):
     # requesting an oauth token to be able to access blizzards api's / client id and secret id required
     response = requests.post("https://eu.battle.net/oauth/token", data={"grant_type": 'client_credentials'},
                              auth=HTTPBasicAuth('d6df743cb1b94e9c9fe1521e844514f8',
@@ -33,9 +33,9 @@ def get_auctions(region, server, amount):
 
     # the amount of auctions displayed on a server are enormous (50.000+), displaying a desired number to show it works
     def take(iterable, n):
-        # using islice to return n amount of items as a list
+    # using islice to return n amount of items as a list
         return list(islice(iterable, n))
 
-    n_items = take(raw_auctions, amount)
 
-    return n_items
+    return raw_auctions
+

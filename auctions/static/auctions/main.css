@@ -96,7 +96,7 @@ filter: brightness(70%);
 
 .content-section {
 background:rgba(128, 0, 0, 0.85);
-filter: brightness(70%);
+filter: brightness(80%);
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
@@ -106,7 +106,7 @@ filter: brightness(70%);
 
 .content-section2 {
 background:rgba(128, 0, 0, 0.85);
-filter: brightness(70%);
+filter: brightness(80%);
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 5px;
@@ -115,6 +115,7 @@ filter: brightness(70%);
   margin-left: 30%;
 
 }
+
 
 .littlePicturePls{
    margin-right: 5%;

@@ -27,5 +27,8 @@ class GetAuctions(forms.Form):
                                         ('Eonar', 'Eonar'), ('Moonglade', 'Moonglade'),
                                         ("Al'Akir", "Al'Akir"), ('Aerie Peak', 'Aerie Peak'),
                                         ('Lightbringer', 'Lightbringer'), ('Earthen Ring', 'Earthen Ring')])
-    # restricting the amount of auctions to see at the same time to prevent crashes, pagination is a future solution
-    amount = forms.IntegerField(min_value=1, max_value=30)
+
+
+
+
+
